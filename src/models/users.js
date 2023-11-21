@@ -43,7 +43,7 @@ module.exports = (sequelize) => {
     },
     phone: {
         type: DataTypes.STRING,
-    },
+    }, 
     adress: {
         type: DataTypes.STRING,
     },
