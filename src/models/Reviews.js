@@ -2,7 +2,7 @@ const { DataTypes } = require("sequelize");
 
 module.exports = (sequelize) => {
   sequelize.define(
-    "pagos",
+    "Reviews",
     {
       id: {
         type: DataTypes.INTEGER,
@@ -11,12 +11,12 @@ module.exports = (sequelize) => {
         autoIncrement: true,
         unique: true,
       },
-      ref: {
+      review: {
         type: DataTypes.STRING,
         allowNull: false,
       },
-      fecha: {
-        type: DataTypes.STRING,
+      calification: {
+        type: DataTypes.DOUBLE,
         allowNull: false,
       },
     },
