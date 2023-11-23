@@ -41,7 +41,19 @@ let capsEntries = entries.map((entry) => [
 ]);
 sequelize.models = Object.fromEntries(capsEntries);
 
-const {} = sequelize.models;
+const { Categories, Payments, Products, Reviews, Users } = sequelize.models;
+
+Categories.hasMany(Products);
+Products.belongsTo(Categories);
+
+Users.hasMany(Products);
+Products.belongsTo(Users);
+
+Users.hasMany(Reviews);
+Reviews.belongsTo(Users);
+
+Users.hasMany(Payments);
+Payments.belongsTo(Users);
 
 module.exports = {
   ...sequelize.models,

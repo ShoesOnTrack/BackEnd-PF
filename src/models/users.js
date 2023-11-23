@@ -1,60 +1,62 @@
-const { DataTypes } = require('sequelize')
+const { DataTypes } = require("sequelize");
 
 module.exports = (sequelize) => {
   sequelize.define(
-    'users', 
+    "Users",
     {
-    id: {
+      id: {
         primaryKey: true,
         type: DataTypes.UUID,
         defaultValue: DataTypes.UUIDV1,
-    },
-    isAdmin:{
-        type:DataTypes.BOOLEAN,
-        defaultValue: false,
-    },
-    ban: {
-        type:DataTypes.BOOLEAN,
+      },
+      name: {
+        type: DataTypes.STRING,
         allowNull: false,
-    },
-    email: {
+      },
+      lastname: {
+        type: DataTypes.STRING,
+        allowNull: true,
+      },
+      email: {
         type: DataTypes.STRING,
         allowNull: false,
         unique: true,
-    },
-    email_verify: {
+      },
+      password: {
+        type: DataTypes.STRING,
+        allowNull: true,
+      },
+      email_verified: {
         type: DataTypes.BOOLEAN,
         allowNull: false,
-    },
-    username: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        unique: true, 
-    },
-    name: {
-        type: DataTypes.STRING,
-        allowNull: false,
-    },
-    dni: {
-        type: DataTypes.STRING,
       },
-    genre: {
+      genre: {
         type: DataTypes.STRING,
-    },
-    phone: {
+        allowNull: true,
+      },
+      phone: {
         type: DataTypes.STRING,
-    }, 
-    adress: {
+        allowNull: true,
+      },
+      address: {
         type: DataTypes.STRING,
-    },
-    country: {
+        allowNull: true,
+      },
+      country: {
         type: DataTypes.STRING,
+        allowNull: true,
+      },
+      isAdmin: {
+        type: DataTypes.BOOLEAN,
+        defaultValue: false,
+      },
+      ban: {
+        type: DataTypes.BOOLEAN,
+        allowNull: false,
+      },
     },
-    },
-  {
-    timestamps: false,
-    freezeTableName: true,
-  }
+    {
+      timestamps: false,
+    }
   );
-}
- 
+};
