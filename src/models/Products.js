@@ -3,8 +3,8 @@ const { DataTypes } = require("sequelize");
 module.exports = (sequelize) => {
   sequelize.define("Products", {
     id: {
-      type: DataTypes.INTEGER,
-      autoIncrement: true,
+      type: DataTypes.UUID,
+      defaultValue: DataTypes.UUIDV4,
       primaryKey: true,
     },
     name: {
@@ -31,16 +31,16 @@ module.exports = (sequelize) => {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    waist: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
     color: {
-      type: DataTypes.STRING,
+      type: DataTypes.ARRAY(DataTypes.STRING),
       allowNull: false,
     },
-    material: {
-      type: DataTypes.STRING,
+    sizes: {
+      type: DataTypes.ARRAY(DataTypes.INTEGER),
+      allowNull: false,
+    },
+    details: {
+      type: DataTypes.ARRAY(DataTypes.STRING),
       allowNull: false,
     },
     sold: {
