@@ -13,11 +13,10 @@ const { deleteUser } = require("../controllers/DELETE/deleteUserController");
 const userRouter = Router();
 
 //Rutas
-//Ruta de todos los productos con borrado logico
 userRouter.post("/", createUser);
-userRouter.get('/', getAllUsers);
-userRouter.get('/:id', getUserById); 
-userRouter.put('/edit/:id', updateUser);
-userRouter.delete('/delete/:id', deleteUser);
+userRouter.get("/", getAllUsers);
+userRouter.get("/:id", getUserById);
+userRouter.put("/edit/:id", updateUser);
+userRouter.delete("/delete/:id", deleteUser);
 
 module.exports = userRouter;

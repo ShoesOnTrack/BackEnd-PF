@@ -1,0 +1,28 @@
+{
+  "Categorias": [
+    {
+      "name": "ZAPATILLAS HIGH TOP"
+    },
+    {
+      "name": "ZAPATILLAS MID TOP"
+    },
+    {
+      "name": "ZAPATILLAS DEPORTIVAS"
+    },
+    {
+      "name": "ZAPATILLAS LOW TOP"
+    },
+    {
+      "name": "CHANCLAS"
+    },
+    {
+      "name": "SANDALIAS"
+    },
+    {
+      "name": "BOTAS"
+    },
+    {
+      "name": "BOTINES"
+    }
+  ]
+}

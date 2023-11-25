@@ -15,7 +15,7 @@ exports.createProductController = async (
 ) => {
   try {
     const existingProduct = await Products.findOne({
-      where: { name, price, brandName },
+      where: { name },
     });
     if (existingProduct) {
       throw new Error("An product with the same name and price already exists");
@@ -32,8 +32,7 @@ exports.createProductController = async (
     let userInstance = await Users.findOne({
       where: { email: user },
     });
-    console.log(userInstance);
-    const newProduct = await Products.create({
+    const newProduct = await Products.findOrCreate({
       name,
       brandName,
       description,

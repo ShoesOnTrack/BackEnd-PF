@@ -19,7 +19,7 @@ exports.getProductsController = async () => {
   const allProducts = products.map((product) => {
     return {
       id: product.id,
-      creator: product.userId,
+      creator: product.UserId,
       name: product.name,
       brandName: product.brandName,
       price: product.price,
@@ -28,6 +28,7 @@ exports.getProductsController = async () => {
       sizes: product.sizes,
       stock: product.stock,
       sold: product.sold,
+      status: product.status,
       category: product.Category ? product.Category.name : null, //.toString()
       description: product.description,
       details: product.details,

@@ -16,7 +16,6 @@ exports.createProduct = async (req, res) => {
     sizes,
     user,
   } = req.body;
-
   try {
     const response = await createProductController(
       name,
