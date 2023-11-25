@@ -25,7 +25,7 @@ const updateType = async (req, res) => {
 const getAllTypes = async (req, res) => {
   try {
     let types = await Categories.findAll({
-      attributes: { exclude: ["createdAt", "updatedAt"] },
+      attributes: { exclude: ["createdAt", "updatedAt", "deletedAt"] },
     });
 
     res.status(200).json(types);
