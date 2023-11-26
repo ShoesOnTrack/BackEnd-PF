@@ -40,6 +40,9 @@ const paginateAllProducts = async (req, res, next) => {
     if (size) {
        whereConditions.sizes = [size]
    }
+   if (price) {
+    whereConditions.price = price
+  }
     
     try {
       const order = [];
