@@ -8,7 +8,7 @@ const paginateAllProducts = async (req, res, next) => {
     const results = {};
   
     // Obtén los parámetros de consulta de la URL
-    const { name, brand, color, sale, size, price, gender, category } = req.query;
+    const { name, brandName, color, sale, size, price, CategoryId } = req.query;
     // Crea un objeto de condiciones vacío
     const whereConditions = {};
   
@@ -18,18 +18,16 @@ const paginateAllProducts = async (req, res, next) => {
         [Op.iLike]: `%${name}%`,
       };
     }
-    if (gender) {
-      if (gender) {
-        whereConditions.gender = gender;
-      }
+    if (brandName) {
+      whereConditions.brandName = brandName
     }
-    if (category) {
-      whereConditions.category = {
-        [Op.iLike]: `%${category}%`,
-      };
+    if (CategoryId) {
+      whereConditions.CategoryId = CategoryId;
     }
     if (color) {
-      whereConditions.color = [color]
+      whereConditions.color = {
+        [Op.iLike]: `%${color}%`,
+      };
     }
     if (sale === "sale") {
       whereConditions.sale = {
