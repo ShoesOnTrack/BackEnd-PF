@@ -8,7 +8,7 @@ const paginateAllProducts = async (req, res, next) => {
     const results = {};
   
     // Obtén los parámetros de consulta de la URL
-    const { name, brandName, color, sale, size, price, CategoryId } = req.query;
+    const { name, brandName, color, sale, size, price, CategoryId, priceOrd } = req.query;
     // Crea un objeto de condiciones vacío
     const whereConditions = {};
   
@@ -40,15 +40,15 @@ const paginateAllProducts = async (req, res, next) => {
     if (size) {
        whereConditions.sizes = [size]
    }
-   if (price) {
+   if (price === Number) {
     whereConditions.price = price
   }
     
     try {
       const order = [];
-      if (price === "highest") {
+      if (priceOrd === "highest") {
         order.push(["price", "DESC"]);
-      } else if (price === "lowest") {
+      } else if (priceOrd === "lowest") {
         order.push(["price", "ASC"]);
       }
       console.log(whereConditions)

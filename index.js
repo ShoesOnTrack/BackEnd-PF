@@ -5,7 +5,7 @@ const { Products } = require("./src/db.js");
 
 const { SERVER_PORT } = process.env;
 
-conn.sync({ force: true }).then(async () => {
+conn.sync({ force: false }).then(async () => {
   const products = await Products.findAll();
   if (!products.length) {
     user();
