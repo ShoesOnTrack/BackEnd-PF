@@ -1,0 +1,363 @@
+{
+  "Zapatos": [
+    {
+      "name": "Air Jordan 1 High OG Royal Reimagined",
+      "brandName": "Nike",
+      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/be4275d7-3a88-4592-a9d7-61d615e20ff1/calzado-air-jordan-1-high-og-royal-reimagined-gX9FS0.png",
+      "price": 180,
+      "color": "Negro/Blanco/Azul rey/Azul rey",
+      "sizes": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50],
+      "stock": 750,
+      "category": "ZAPATILLAS HIGH TOP",
+      "description": "El AJ1 cambió para siempre el juego del calzado. Sobre la base de su legado, esta edición real combina gamuza azul rey de primera calidad con cuero negro intenso. La clásica marca Nike Air en la lengüeta y la plantilla se complementa con el logotipo de Wings en el cuello acolchado y de corte alto. La distintiva suela exterior tachonada de estrellas recibe el tratamiento azul rey, lo que te permite llevar a la dinastía hacia adelante con cada paso.",
+      "details": [
+        "Cuero auténtico",
+        "Logotipo Wings estampado en el cuello",
+        "Logotipo Swoosh cosido",
+        "Tracción de goma",
+        "Suela de espuma"
+      ],
+      "user": "ShoesOnTrack@gmail.com"
+    },
+    {
+      "name": "Air Jordan 1 Mid SE Craft",
+      "brandName": "Nike",
+      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/24b857dd-1ed6-4a9a-b638-7d897a62819a/calzado-air-jordan-1-mid-se-craft-5VjD18.png",
+      "price": 135,
+      "color": "Negro/Blanco/Azul rey/Azul rey",
+      "sizes": [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50],
+      "stock": 750,
+      "category": "ZAPATILLAS MID TOP",
+      "description": "Los nuevos colores y las texturas frescas ofrecen un AJ1 artesanal que mantiene el look clásico y la sensación familiar. Este favorito de todos los tiempos está confeccionado con materiales premium y adornado con bordes sin rematar y con costuras en contraste.",
+      "details": [
+        "El cuero ofrece durabilidad y estructura.",
+        "La unidad Nike Air-Sole encapsulada proporciona amortiguación ligera.",
+        "La suela de goma te brinda tracción en distintos tipos de superficies."
+      ],
+      "user": "ShoesOnTrack@gmail.com"
+    },
+    {
+      "name": "Nike Air Max Plus",
+      "brandName": "Nike",
+      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/67720f48-cbdb-4b74-94ad-f79d675cbbe3/calzado-air-max-plus-x9G2xF.png",
+      "price": 175,
+      "color": "Blanco/Azul universitario/Negro/Oro universitario",
+      "sizes": [38, 39, 40, 41, 42, 43, 44],
+      "stock": 450,
+      "category": "ZAPATILLAS LOW TOP",
+      "description": "Deja que tu actitud se destaque con la cordonera con un estilo llamarada que le agrega calor a las calles, mientras que la malla ventilada mantiene la frescura. El Nike Air Max Plus te brinda una experiencia Air optimizada que ofrece una estabilidad premium y una amortiguación increíble.",
+      "details": [
+        "Al traer la vida despreocupada de la playa a la ciudad, el mediopié con soporte se inspira en la cola de una ballena.",
+        "Las líneas de diseño de la icónica estructura de plástico hacen alusión a las palmeras y las olas del mar.",
+        "Las unidades Nike Air fueron diseñadas originalmente para el running de alto rendimiento y proporcionan una amortiguación ligera y duradera.",
+        "La parte superior sintética con malla ligera agrega transpirabilidad y durabilidad.",
+        "La suela de goma ofrece tracción duradera."
+      ],
+      "user": "ShoesOnTrack@gmail.com"
+    },
+    {
+      "name": "Jumpman MVP",
+      "brandName": "Nike",
+      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/a4fe47a4-6eaf-4df6-9684-9586e1a2596e/calzado-jumpman-mvp-gzmjDz.png",
+      "price": 165,
+      "color": "Negro/Rojo universitario/Antracita/Concordia oscuro",
+      "sizes": [43, 44],
+      "stock": 600,
+      "category": "ZAPATILLAS HIGH TOP",
+      "description": "Quizá no inventamos el remix, pero al pensar en el material que teníamos para probar, hicimos una versión superfácil. Tomamos elementos del AJ6, 7 y 8, para convertirlos en un calzado completamente nuevo que rinde homenaje a la primera ronda de 3 campeonatos victoriosos de MJ. Con detalles de cuero, tela y nobuk, este calzado rinde homenaje a un legado y al mismo tiempo te alienta a construir el tuyo.",
+      "details": [
+        "La parte superior es una combinación de elementos del AJ6 y el AJ7: la parte superior de la lengüeta y el revestimiento modificado hacen referencia al AJ6, y el forro en forma de cubrecalzado rinde homenaje al AJ7.",
+        "El logotipo Nike Air bordado en el talón se basa en el AJ6 y el detalle del talón moldeado proviene del AJ8.",
+        "El diseño de la suela es un recuerdo del AJ6.",
+        "La unidad encapsulada Nike Air-Sole proporciona amortiguación ligera."
+      ],
+      "user": "ShoesOnTrack@gmail.com"
+    },
+    {
+      "name": "Nike Air VaporMax Plus",
+      "brandName": "Nike",
+      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9432d22f-2bed-4603-9244-f72090d4ca5c/calzado-air-vapormax-plus-nC0dzF.png",
+      "price": 210,
+      "color": "Blanco/Platino puro/Blanco",
+      "sizes": [40, 41, 42, 43, 44, 45, 46, 47, 48],
+      "stock": 750,
+      "category": "ZAPATILLAS LOW TOP",
+      "description": "El Nike Air VaporMax Plus mira hacia el pasado para impulsarte al futuro. En un claro guiño al Air Max Plus de 1998 con una estructura flotante, una parte superior acolchada y un logotipo en el talón, este calzado incorpora la tecnología revolucionaria VaporMax Air para aumentar la comodidad y crear un look moderno.",
+      "details": [
+        "Este diseño trae la vida de playa a la ciudad con un prominente arco que se inspira en la cola de una ballena y agrega estructura. Los icónicos dedos ondulados hacen alusión a las palmeras y las olas del mar.",
+        "Las unidades Nike Air fueron diseñadas originalmente para el running de alto rendimiento y proporcionan una amortiguación ligera y duradera.",
+        "Los colores degradados y audaces brindan un estilo de herencia a este poderoso Air Max.",
+        "La parte superior sintética aporta comodidad ligera y durabilidad.",
+        "La suela de goma de largo completo ofrece mayor tracción y durabilidad en tus desplazamientos."
+      ],
+      "user": "ShoesOnTrack@gmail.com"
+    },
+    {
+      "name": "Nike Air Force 1 '07",
+      "brandName": "Nike",
+      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f66a08b9-211c-43fe-a0cc-d04a732bdc63/calzado-air-force-1-07-5xqQ6q.png",
+      "price": 110,
+      "color": "Blanco/Café claro goma/Blanco",
+      "sizes": [39, 40, 41, 42, 44, 47, 48, 49],
+      "stock": 1500,
+      "category": "ZAPATILLAS LOW TOP",
+      "description": "El fulgor vive en Nike Air Force 1 ’07, el ícono del básquetbol que le da un toque fresco a las características más recordadas: cuero reluciente, combinaciones de colores impecables y la cantidad perfecta de destellos para que brilles. Este acabado blanco puro e impecable agrega el contraste de la suela de goma para brindar un look fresco y versátil con la cantidad exacta de destello.",
+      "details": [
+        "Los revestimientos de cuero en la parte superior agregan un estilo de herencia con durabilidad y soporte.",
+        "Diseñada originalmente para el básquetbol de alto rendimiento, la amortiguación Nike Air agrega comodidad ligera durante todo el día.",
+        "El estilo de perfil bajo ofrece un look impecable y sencillo.",
+        "El cuello y la lengüeta acolchados con forro de malla brindan una sensación de suavidad y comodidad.",
+        "La suela de goma cuenta con el icónico patrón gráfico de rodadura del círculo de pivote para brindar tracción y durabilidad comprobadas."
+      ],
+      "user": "ShoesOnTrack@gmail.com"
+    },
+    {
+      "name": "Air Jordan 1 Mid",
+      "brandName": "Nike",
+      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/31ff59e2-89d0-4a83-839a-656618674782/calzado-air-jordan-1-mid-tXSJ73.png",
+      "price": 210,
+      "color": "Blanco/Negro/Rojo gimnasio",
+      "sizes": [40, 41, 42, 43, 44, 45, 46, 47, 48, 49],
+      "stock": 2000,
+      "category": "ZAPATILLAS MID TOP",
+      "description": "Inspirada en el AJ1 original, esta edición de corte mid mantiene el look icónico que te encanta, y los colores selectos y el cuero impecable le dan una identidad distintiva.",
+      "details": [
+        "La parte superior de cuero, cuero sintético y tela ofrece una mayor sujeción.",
+        "La entresuela de espuma con amortiguación Nike Air brinda comodidad ligera.",
+        "La suela de goma cuenta con un punto de giro que brinda tracción duradera."
+      ],
+      "user": "ShoesOnTrack@gmail.com"
+    },
+    {
+      "name": "Air Jordan 1 Mid SE",
+      "brandName": "Nike",
+      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/fc59de3d-0cfb-44c8-961c-1beccc6bd5d0/calzado-air-jordan-1-mid-se-TlHVHn.png",
+      "price": 210,
+      "color": "Negro/Sky J Mauve/Blanco/Naranja Sky J",
+      "sizes": [38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49],
+      "stock": 500,
+      "category": "ZAPATILLAS MID TOP",
+      "description": "Look fresco, sensación familiar. Cada vez que el AJ1 se renueva, obtienes el calzado clásico con nuevos colores y texturas. Los materiales y los detalles premium aportan una expresión moderna al favorito de siempre.",
+      "details": [
+        "El cuero ofrece durabilidad y estructura.",
+        "La unidad Nike Air-Sole encapsulada proporciona amortiguación ligera.",
+        "La suela de goma te brinda tracción en distintos tipos de superficies."
+      ],
+      "user": "ShoesOnTrack@gmail.com"
+    },
+    {
+      "name": "Nike Dunk Low Retro",
+      "brandName": "Nike",
+      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2d1b64e2-323d-41bb-8d75-6490d90ba518/calzado-dunk-low-retro-76KnBL.png",
+      "price": 115,
+      "color": "Negro/Negro/Blanco/Café ámbar",
+      "sizes": [40, 41, 42, 43, 44, 45, 46, 47, 48, 49],
+      "stock": 500,
+      "category": "ZAPATILLAS LOW TOP",
+      "description": "El ícono del básquetbol, creado para la cancha y adaptado al estilo urbano, vuelve con detalles clásicos y un estilo de básquetbol retro. Con un diseño que lleva el estilo de los 80, la zona del tobillo acolchada de corte low te permite ir cómodamente a cualquier parte.",
+      "details": [
+        "El cuero en la parte superior se asienta en suave perfección.",
+        "La entresuela de espuma proporciona una amortiguación ligera y con repuesta inmediata.",
+        "La suela de goma con el clásico punto de pivote del básquetbol aporta durabilidad, tracción y un estilo tradicional.",
+        "El cuello acolchado de corte low luce elegante y se siente genial."
+      ],
+      "user": "ShoesOnTrack@gmail.com"
+    },
+    {
+      "name": "Nike Dunk Low Retro Premium",
+      "brandName": "Nike",
+      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/68be107b-2d52-441b-8dbf-114dea1a7218/calzado-dunk-low-retro-premium-NMFRvL.png",
+      "price": 125,
+      "color": "Playa/Lona/Vela/Café barroco",
+      "sizes": [41, 42, 43],
+      "stock": 500,
+      "category": "ZAPATILLAS LOW TOP",
+      "description": "Otro día, otra Dunk perfecta.El ícono ochentero del básquetbol, que se creó para la cancha pero conquistó las calles, vuelve con revestimientos suaves y vibras de básquetbol clásico.Con su diseño icónico, el Nike Dunk Low Premium canaliza el estilo clásico de nuevo en las calles.La zona del tobillo suave, acolchada y de perfil bajo te permite ir cómodamente a cualquier parte.Obtenlas mientras duren.",
+      "details": [
+        "El cuero impecable en la parte superior tiene un ligero brillo, con el tiempo alcanza una suave perfección y luce revestimientos duraderos que recuerdan al básquetbol de los 80.",
+        "La entresuela de espuma proporciona una amortiguación ligera y eficaz.",
+        "El cuello de corte bajo con almohadilla agrega un look elegante que se siente genial.",
+        "Los llamativos bloques de colores mantienen el look icónico del básquetbol que más te gusta.",
+        "La suela de goma con el clásico punto de giro aporta durabilidad, tracción y un estilo tradicional."
+      ],
+      "user": "ShoesOnTrack@gmail.com"
+    },
+    {
+      "name": "Nike Air Max Terrascape Plus",
+      "brandName": "Nike",
+      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a71d0462-0443-4b93-94c7-7220f0d5b483/calzado-air-max-terrascape-plus-2bxm1R.png",
+      "price": 185,
+      "color": "Blanco cumbre/Polvo fotón/Mena de hierro claro",
+      "sizes": [35, 36, 37, 38, 39, 40],
+      "stock": 500,
+      "category": "ZAPATILLAS LOW TOP",
+      "description": "Rediseñado en colaboración con la naturaleza, el ícono de la pista de los 90 que se volvió una leyenda urbana redobla su actitud con detalles técnicos y resistentes. Este icónico diseño está confeccionado con al menos un 20% de materiales reciclados por peso, para que no solo te veas, sino también te sientas bien. Renueva tu experiencia de amortiguación con la incorporación de nuestra innovadora espuma Crater en la entresuela.",
+      "details": [
+        "La parte superior en capas combina ligeros y duraderos materiales con detalles de malla abierta.",
+        "La icónica estructura brinda un soporte ligero.",
+        "La tecnología Nike Air absorbe el impacto para brindar amortiguación en cada paso.",
+        "La entresuela de espuma Crater moteada con goma Nike Grind agrega estabilidad a tu camino.",
+        "La suela de goma proporciona goma Nike Grind para una mayor tracción y durabilidad."
+      ],
+      "user": "ShoesOnTrack@gmail.com"
+    },
+    {
+      "name": "Gazelle Shoes",
+      "brandName": "Adidas",
+      "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/9846b43f6434426b84faaef900bafa2c_9366/Gazelle_Shoes_Green_GY7338_01_standard.jpg",
+      "price": 100,
+      "color": "Verde Oscuro/Blanco hueso/Blanco Crema",
+      "sizes": [43, 44, 45, 46, 47, 48],
+      "stock": 500,
+      "category": "ZAPATILLAS LOW TOP",
+      "description": "Desde fanáticos del fútbol en los años 60 y 70 hasta patinadores y rockeros independientes en los años 90, los zapatos adidas Gazelle han atravesado el panorama cultural y el mundo. Se han convertido en un auténtico básico con mucha personalidad. Estas zapatillas son una reedición individual de las Gazelle de 1991, con los mismos materiales, proporciones y texturas que las originales. La parte superior de gamuza con las 3 Rayas dentadas de alto contraste y la clásica punta en T añaden un estilo atemporal a cada look.",
+      "details": [
+        "Ajuste regular",
+        "Cierre de encaje",
+        "Parte superior de gamuza",
+        "Forro sintético",
+        "Suela de goma",
+        "Importado"
+      ],
+      "user": "ShoesOnTrack@gmail.com"
+    },
+    {
+      "name": "NMD_R1 Shoes",
+      "brandName": "Adidas",
+      "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/9dbb20530665440389ced391e23a1cbc_9366/NMD_R1_Shoes_Black_IE9627_01_standard.jpg",
+      "price": 150,
+      "color": "Negro núcleo/Negro núcleo/Amarillo pulso",
+      "sizes": [38, 39, 40],
+      "stock": 500,
+      "category": "ZAPATILLAS DEPORTIVAS",
+      "description": "Estos zapatos adidas, una reinvención de un corredor de los 80, están diseñados pensando en la comodidad durante todo el día. Una entresuela BOOST devuelve energía con cada paso y una parte superior de malla suave es flexible para sentirse bien. El estampado floral integral desprende una energía fresca que se acentúa con una joya de encaje transparente colgante con un acabado de resina.",
+      "details": [
+        "Ajuste regular",
+        "Cierre de encaje",
+        "Parte superior de malla",
+        "Forro textil",
+        "Entresuela BOOST",
+        "Suela de goma",
+        "El hilo de la parte superior contiene al menos un 50 % de Parley Ocean Plastic y un 50 % de poliéster reciclado."
+      ],
+      "user": "ShoesOnTrack@gmail.com"
+    },
+    {
+      "name": "Chanclas Adillete Confort",
+      "brandName": "Adidas",
+      "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/07b34d4b83904948880baeb4011677f0_9366/Adilette_Comfort_Slides_Black_GX9835_01_standard.jpg",
+      "price": 40,
+      "color": "Negro núcleo/Negro núcleo/Núcleo negro",
+      "sizes": [35, 36, 38, 39, 40, 41],
+      "stock": 500,
+      "category": "CHANCLAS",
+      "description": "Inspiradas en las chanclas deportivas adidas que se vieron por primera vez en los años 70, estas chanclas son una nueva versión del famoso estilo Adilette. Con su forma limpia y sus distintivas 3 rayas, se mueven fácilmente entre la arena y las calles de la ciudad. La parte superior de una sola banda garantiza un ajuste perfecto dondequiera que vayas.",
+      "details": [
+        "Ajuste regular",
+        "Construcción sin cordones",
+        "Parte superior sintética",
+        "Forro textil",
+        "Suela exterior de EVA contorneada"
+      ],
+      "user": "ShoesOnTrack@gmail.com"
+    },
+    {
+      "name": "Adissage Slides",
+      "brandName": "Adidas",
+      "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/e24b207e5b6e46d58e5eab8201255c85_9366/Adissage_Slides_White_F35573_01_standard.jpg",
+      "price": 32,
+      "color": "Blanco Nube/Negro Nucleo/Blanco Nube",
+      "sizes": [40, 41, 42, 43, 44],
+      "stock": 2500,
+      "category": "CHANCLAS",
+      "description": "Estas chanclas adidas Adissage tienen una plantilla flexible y nudosa que masajea los pies trabajadores y una parte superior con vendaje que se ajusta para un ajuste personalizado. Estos chanclas están diseñados para el rejuvenecimiento después del entrenamiento y no para la comodidad durante todo el día. Si está buscando un chancla de masaje confortable durante todo el día, pruebe nuestras chanclas Adilette Comfort.",
+      "details": [
+        "Ajuste regular",
+        "Construcción sin cordones",
+        "Parte superior sintética",
+        "Forro textil",
+        "Suela exterior de EVA contorneada"
+      ],
+      "user": "ShoesOnTrack@gmail.com"
+    },
+    {
+      "name": "Adillete Platform Slides",
+      "brandName": "Adidas",
+      "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/416c979f4cad4cd49a70afa801058977_9366/Adilette_Platform_Slides_White_IE9703_01_standard.jpg",
+      "price": 50,
+      "color": "Blanco Nube/Cero Metalico/Gris",
+      "sizes": [40, 41, 42, 43, 44],
+      "stock": 2500,
+      "category": "CHANCLAS",
+      "description": "La forma más cool de lucir tu pedicura. Estas chanclas de plataforma adidas lucen como en casa junto a la piscina y en la ciudad con las 3 Franjas envueltas alrededor de la parte superior de vendaje suave. Estas sandalias tienen una plantilla contorneada y una suela de EVA acolchada para máxima comodidad.",
+      "details": [
+        "Ajuste regular",
+        "Construcción sin cordones",
+        "Parte superior con vendaje sintético",
+        "Forro textil",
+        "Plantilla de PU contorneada",
+        "Plataforma EVA",
+        "Suela de EVA"
+      ],
+      "user": "ShoesOnTrack@gmail.com"
+    },
+    {
+      "name": "Mehana Sandals",
+      "brandName": "Adidas",
+      "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/df54bec024bd49349d5baeff06597819_9366/Mehana_Sandals_Grey_IF8183_01_standard.jpg",
+      "price": 90,
+      "color": "Gris guía/Blanco nube/Blanco cristal",
+      "sizes": [41, 42, 45],
+      "stock": 1000,
+      "category": "SANDALIAS",
+      "description": "Con un aire futurista y una silueta elegante, estas sandalias adidas cubren tus días soleados. La parte superior transpirable es flexible contra tus pies, lo que te permite moverte libremente. El cierre de hebilla ajustable te brinda el ajuste perfecto.",
+      "details": [
+        "Ajuste regular",
+        "Cierre de hebilla",
+        "Parte superior de EVA moldeada",
+        "Forro textil",
+        "Plantilla de poliuretano"
+      ],
+      "user": "ShoesOnTrack@gmail.com"
+    },
+    {
+      "name": "Botas Adifom SST",
+      "brandName": "Adidas",
+      "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/55760c3b073148fe962622e4210b6e02_9366/AdiFOM_SST_Boot_Shoes_Silver_IE4613_01_standard.jpg",
+      "price": 110,
+      "color": "Rosado Vibrante/Rosado Vibrante/Negro Nucleo",
+      "sizes": [35, 36, 38, 39, 40, 41],
+      "stock": 1000,
+      "category": "BOTAS",
+      "description": "Los zapatos adidas Superstar tienen que ver con la individualidad. Sin miedo a romper moldes, los zapatos adidas AdiFOM SST Boot se inspiran en el pasado y lo recontextualizan para influir en la moda urbana moderna. Un diseño con corte de bota y una construcción de espuma sostenible miran hacia el futuro, mientras que la icónica puntera celebra su historia. Ponte un par de calcetines para disfrutar de una comodidad ideal y deja que la suave espuma haga el resto. Estos zapatos están fabricados con materiales naturales y renovables como parte de nuestro viaje para diseñar recursos finitos y ayudar a acabar con los residuos plásticos.",
+      "details": [
+        "Ajuste regular",
+        "Faciles de poner",
+        "Parte superior sintética",
+        "Suela sintética",
+        "Mínimo de 50% de materiales naturales y renovables."
+      ],
+      "user": "ShoesOnTrack@gmail.com"
+    },
+    {
+      "name": "Real Madrid Gazelle Shoes",
+      "brandName": "Adidas",
+      "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/1baba34e6aca42548085adbe7b3cb1f0_9366/Real_Madrid_Gazelle_Shoes_Blue_IE8502_01_standard.jpg",
+      "price": 150,
+      "color": "Legend Ink / Cloud White / Oro Metallic",
+      "sizes": [43, 44, 45, 46, 47, 48],
+      "stock": 500,
+      "category": "ZAPATILLAS LOW TOP",
+      "description": "Tu amor por el juego corre por tus venas y por estos zapatos adidas Gazelle. Volviendo a sus raíces deportivas, estos clásicos zapatos de 3 rayas están adornados con colores y un logotipo que muestra tu apoyo a tu club. Completo con una parte superior de gamuza y esa famosa silueta de perfil bajo.",
+      "details": [
+        "Ajuste regular",
+        "Cierre de encaje",
+        "Parte superior de gamuza",
+        "Forro sintético",
+        "Suela de goma",
+        "Importado"
+      ],
+      "user": "ShoesOnTrack@gmail.com"
+    }
+  ]
+}
