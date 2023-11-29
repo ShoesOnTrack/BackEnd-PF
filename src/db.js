@@ -2,6 +2,7 @@ require("dotenv").config();
 const { Sequelize } = require("sequelize");
 const fs = require("fs");
 const path = require("path");
+const { DataTypes } = require("sequelize");
 const { DB_USER, DB_PASSWORD, DB_HOST, DB_NAME, DB_POSTGRE_URL } = process.env;
 
 const sequelize = new Sequelize(
@@ -41,7 +42,19 @@ let capsEntries = entries.map((entry) => [
 ]);
 sequelize.models = Object.fromEntries(capsEntries);
 
-const {} = sequelize.models;
+const { Categories, Payments, Products, Reviews, Users } = sequelize.models;
+
+Categories.hasMany(Products);
+Products.belongsTo(Categories);
+
+Users.hasMany(Products);
+Products.belongsTo(Users);
+
+Users.hasMany(Reviews);
+Reviews.belongsTo(Users);
+
+Users.hasMany(Payments);
+Payments.belongsTo(Users);
 
 module.exports = {
   ...sequelize.models,
