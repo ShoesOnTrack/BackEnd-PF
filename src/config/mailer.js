@@ -5,14 +5,13 @@ const env = process.env;
 
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
-  port: 587,
-  secure: false,
-  tls: { rejectUnauthorized: false },
+  port: 465,
+  secure: true,
   auth: {
-    user: env.mailer_user,
-    pass: env.mailer_pass,
-    clientId: env.mailer_clientId,
-    clientSecret: env.mailer_clientSecret,
+    user: env.MAILER_USER,
+    pass: env.MAILER_PASS,
+    clientId: env.AUTH0_CLIENT_ID,
+    clientSecret: env.AUTH0_CLIENT_SECRET
   },
 });
 

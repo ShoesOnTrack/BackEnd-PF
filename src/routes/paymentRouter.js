@@ -5,10 +5,10 @@ const {
   cancelOrder,
 } = require("../controllers/paymentControllers.js");
 
-const router = Router();
+const paymentRouter = Router();
 
-router.post("/create-order", createOrder);
-router.get("/capture-order", captureOrder);
-router.get("/cancel-order", cancelOrder);
+paymentRouter.post("/create-order", createOrder);
+paymentRouter.get("/capture-order", captureOrder);
+paymentRouter.get("/cancel-order", cancelOrder);
 
-module.exports = router;
+module.exports = paymentRouter;

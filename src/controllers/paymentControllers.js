@@ -8,52 +8,53 @@ const {
 
 const createOrder = async (req, res) => {
   try {
-    const order = {
-      intent: "CAPTURE",
-      purchase_units: [
-        {
-          amount: {
-            currency_code: "USD",
-            value: "300.00",
-          },
-          description: "bus ticket sales application",
-
-        },
-      ],
-      application_context: {
-        payment_method: {
-          payer_selected: "PAYPAL",
-          payee_preferred: "IMMEDIATE_PAYMENT_REQUIRED"
-        },
-        brand_name: "ticketExpress.com",
-        landing_page: "LOGIN",
-        user_action: "PAY_NOW",
-        shipping_preference: "NO_SHIPPING",
-        return_url: "http://localhost:3001/payment/capture-order",
-        cancel_url: "http://localhost:3001/payment/cancel-order",
-      },
-    };
-
-    const params = new URLSearchParams();
-    params.append("grant_type", "client_credentials");
-
-    const {
-      data: { access_token },
-    } = await axios.post(
-      "https://api-m.sandbox.paypal.com/v1/oauth2/token",
-      params,
+  const order = {
+    intent: "CAPTURE",
+    purchase_units: [
       {
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
+        amount: {
+          currency_code: "USD",
+          value: "300.00",
         },
-        auth: {
-          username: 'Ab3fo1dJ3hyDSILpbaYvlRDLHO9bVZwV_0fg-Mv0BKGT8xcyd255nu_6IAC3KTx1ll9IIP--QjIJ2_pA',
-          password: 'EI0uHYr_31_coCWAGIFpO6T4_zc86jM_EW_QlqafuxFFOJfi2CZaJqPslJ2e1Mf24XEpSZrkULpzwoJh',
-        },
-      }
-    );
-    const response = await axios.post(
-      `${PAYPAL_API}v2/checkout/orders`,
+        description: "shoes sales application",
+      },
+    ],
+    application_context: {
+      payment_method: {
+        payer_selected: "PAYPAL",
+        payee_preferred: "IMMEDIATE_PAYMENT_REQUIRED",
+      },
+      brand_name: "shoesOnTrack.com",
+      landing_page: "LOGIN",
+      user_action: "PAY_NOW",
+      shipping_preference: "NO_SHIPPING",
+      return_url: "http://localhost:3001/payment/capture-order",
+      cancel_url: "http://localhost:3001/payment/cancel-order",
+    },
+  };
+
+  const params = new URLSearchParams();
+  params.append("grant_type", "client_credentials");
+
+  const {
+    data: { access_token },
+  } = await axios.post(
+    "https://api-m.sandbox.paypal.com/v1/oauth2/token",
+    params,
+    {
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      auth: {
+        username: PAYPAL_API_CLIENT,
+        password: PAYPAL_API_SECRET,
+      },
+    }
+  );
+  console.log(access_token);
+  
+  const response = await axios.post(
+      `${PAYPAL_API}/v2/checkout/orders`,
       order,
       {
         headers: {
@@ -61,9 +62,9 @@ const createOrder = async (req, res) => {
         },
       }
     );
-    res.json(response);
+    res.json(response.data);
   } catch (error) {
-    console.log(error);
+    console.log(error.message);
     res.status(500).send("Something goes wrong");
   }
 };
