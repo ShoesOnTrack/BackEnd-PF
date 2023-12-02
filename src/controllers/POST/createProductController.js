@@ -1,3 +1,4 @@
+const { uploadImage } = require("../../config/cloudinary");
 const { Products, Categories, Users } = require("../../db");
 
 exports.createProductController = async (
@@ -15,7 +16,7 @@ exports.createProductController = async (
 ) => {
   try {
     const existingProduct = await Products.findOne({
-      where: { name },
+      where: { name: name, brandName: brandName, price: price },
     });
     if (existingProduct) {
       throw new Error("An product with the same name and price already exists");
@@ -32,12 +33,15 @@ exports.createProductController = async (
     let userInstance = await Users.findOne({
       where: { email: user },
     });
-    const newProduct = await Products.findOrCreate({
+
+    const cloudinaryUpload = await uploadImage(`${image}`);
+
+    const newProduct = await Products.upsert({
       name,
       brandName,
       description,
       price,
-      image,
+      image: cloudinaryUpload,
       color,
       details,
       sizes,
