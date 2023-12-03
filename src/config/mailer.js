@@ -11,7 +11,7 @@ const transporter = nodemailer.createTransport({
     user: env.MAILER_USER,
     pass: env.MAILER_PASS,
     clientId: env.AUTH0_CLIENT_ID,
-    clientSecret: env.AUTH0_CLIENT_SECRET
+    clientSecret: env.AUTH0_CLIENT_SECRET,
   },
 });
 
