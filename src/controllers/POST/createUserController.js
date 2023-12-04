@@ -8,11 +8,18 @@ exports.createUserController = async (name, email, email_verified) => {
     });
 
     if (created) {
-      // Si se creó un nuevo usuario, devuelve el nuevo usuario creado
-      return "Se creo el nuevo usuario";
+      const creado = await this.createUserController(name, email, email_verified)
+
+      return creado
     } else {
       // Si no se creó un nuevo usuario, significa que ya existe, entonces puedes lanzar un error o manejarlo de otra manera.
-      throw new Error("Este usuario ya está registrado.");
+      let id = newUser.id;
+      let name = newUser.name;
+      let email = newUser.name;
+      let isAdmin = newUser.isAdmin;
+      let ban = newUser.ban;
+
+      return {id, name, email, isAdmin, ban}
     }
   } catch (error) {
     return { error: error.message };

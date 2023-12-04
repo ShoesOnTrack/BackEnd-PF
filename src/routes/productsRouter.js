@@ -23,5 +23,7 @@ productRouter.put("/", updateProduct);
 productRouter.get("/", getProductseHandler);
 //Ruta para crear productos
 productRouter.post("/", createProduct);
+//Ruta para buscar los productos de un user
+productRouter.get("/all", )
 
 module.exports = productRouter;
