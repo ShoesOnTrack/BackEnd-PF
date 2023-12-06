@@ -21,21 +21,33 @@ exports.createProductController = async (
     if (existingProduct) {
       throw new Error("An product with the same name and price already exists");
     }
-
+    
+    
     let categoryInstance = await Categories.findOne({
       where: { name: category },
     });
-
+    
     if (!categoryInstance) {
       categoryInstance = await Categories.create({ name: category });
     }
-
+    
     let userInstance = await Users.findOne({
-      where: { email: user },
+      where: { id : user },
     });
-
+    
     const cloudinaryUpload = await uploadImage(`${image}`);
-
+    
+    console.log(name)
+    console.log(brandName)
+    console.log(price)
+    console.log(description)
+    console.log(image)
+    console.log(category)
+    console.log(color)
+    console.log(details)
+    console.log(stock)
+    console.log(sizes)
+    console.log(user)
     const newProduct = await Products.upsert({
       name,
       brandName,
@@ -49,14 +61,13 @@ exports.createProductController = async (
       CategoryId: categoryInstance.id,
       UserId: userInstance.id,
     });
-
     const categoryData = {
       id: categoryInstance.id,
       name: categoryInstance.name,
     };
-
+    
     const product = [newProduct, categoryData];
-
+    
     return product;
   } catch (error) {
     throw new Error("Unable to create this event: " + error.message);

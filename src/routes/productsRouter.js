@@ -10,6 +10,7 @@ const { createProduct } = require("../handlers/POST/createProduct");
 
 // PUT Handlers
 const { updateProduct } = require("../handlers/PUT/updateProduct");
+const { getAllUserProductsHandler } = require("../handlers/GET/getProductsUser");
 
 const productRouter = Router();
 
@@ -24,6 +25,6 @@ productRouter.get("/", getProductseHandler);
 //Ruta para crear productos
 productRouter.post("/", createProduct);
 //Ruta para buscar los productos de un user
-productRouter.get("/all", )
+productRouter.get("/all", getAllUserProductsHandler)
 
 module.exports = productRouter;
