@@ -3,25 +3,18 @@ const { Sequelize } = require("sequelize");
 const fs = require("fs");
 const path = require("path");
 const { DataTypes } = require("sequelize");
-const { DB_USER, DB_PASSWORD, DB_HOST, DB_NAME, DB_POSTGRE_URL } = process.env;
+const { DB_USER, DB_PASSWORD, DB_HOST, DB_NAME, DB_PORT } = process.env;
 
 const sequelize = new Sequelize(
-  `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_NAME}`,
+  `postgresql://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}`,
   {
+    dialectModule: require('pg'),
+    dialect: 'postgres',
     logging: false,
     native: false,
   }
 );
 const basename = path.basename(__filename);
-
-//   const sequelize = new Sequelize(DB_POSTGRE_URL, {
-//  logging: false, native: false,
-//     dialectOptions: {
-//      ssl: {
-//        require : true,
-//      }
-//    }});
-//  const basename = path.basename(__filename);
 
 const modelDefiners = [];
 
