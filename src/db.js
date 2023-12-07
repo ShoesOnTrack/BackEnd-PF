@@ -43,9 +43,6 @@ Products.belongsToMany(Users, {through: "user_products"});
 Categories.hasMany(Products);
 Products.belongsTo(Categories);
 
-Users.hasMany(Products);
-Products.belongsTo(Users);
-
 Users.hasMany(Reviews);
 Reviews.belongsTo(Users);
 

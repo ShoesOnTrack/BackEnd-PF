@@ -11,7 +11,7 @@ const getFavs = async(id)=>{
     let filtrado = favorites[0]?.Products?.filter(cart=>{
         return cart.user_products?.isFavorite === true
     })
-    return favorites[0];
+    return filtrado;
 }
 
 const createFav = async({UserId, ProductId})=>{
