@@ -25,7 +25,6 @@ exports.shoes = async (req, res) => {
         description: shoe.description,
         details: shoe.details,
         CategoryId: categoryInstance.id,
-        UserId: userInstance.id,
       });
     });
 
