@@ -1,5 +1,4 @@
 const axios = require("axios");
-<<<<<<< HEAD
 const sendEmail = require("../config/mailer.js");
 // const { PAYPAL_API, PAYPAL_API_CLIENT, PAYPAL_API_SECRET }= process.env;
 
@@ -7,15 +6,6 @@ const PAYPAL_API = "https://api-m.sandbox.paypal.com";
 const PAYPAL_API_CLIENT = "AaHhTpPS12nRr6xYKtC1ON5uepgecESSzzVPZ-GF91aq-hIqPC-_Qs6csNxmCxl4-pI5SmPMZeB-aHV6"
 const PAYPAL_API_SECRET = "EAbiJOvD1WyHZ3kGeDdP3gKReovmZ_urdMRuMtDS2jF3dw1UYPmrTXkQIIyfGNzjd9dTzdvCsS0Agh8f"
 
-=======
-
-const sendEmail = require("../config/mailer");
-const {
-  PAYPAL_API,
-  PAYPAL_API_CLIENT,
-  PAYPAL_API_SECRET,
-} = require("../config/config.js");
->>>>>>> 73b0ac1276c18fa455195ed3ef64c3dc984de988
 
 const createOrder = async (req, res) => {
   try {
@@ -98,16 +88,11 @@ const captureOrder = async (req, res) => {
     // Verifico si fue exitosa la captura
     if (response.data.status === "COMPLETED") {
       //Enviaremos la notificacion del pago
-<<<<<<< HEAD
       const emailResult = await sendEmail(
         "sergiovelezhernandez11@gmail.com", // Cambia por la dirección de correo a la que deseas enviar la notificación
-=======
-      /*  await sendEmail(
-        "aggus_gymnas@hotmail.com", // Cambia por la dirección de correo a la que deseas enviar la notificación
->>>>>>> 73b0ac1276c18fa455195ed3ef64c3dc984de988
         "Notificación de Pago",
         "Has realizado con éxito la compra del siguiente ticket :"
-      ); */
+      ); 
     }
 
     return res.redirect("http://localhost:3000/");

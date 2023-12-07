@@ -25,10 +25,9 @@ productRouter.put("/", updateProduct);
 productRouter.get("/", getProductseHandler);
 //Ruta para crear productos
 productRouter.post("/", createProduct);
-<<<<<<< HEAD
 //Ruta para buscar los productos de un user
-productRouter.get("/all", getAllUserProductsHandler)
-=======
->>>>>>> 73b0ac1276c18fa455195ed3ef64c3dc984de988
+productRouter.get("/all", getAllUserProductsHandler);
+//Ruta para modificar los productos
+productRouter.put("/change", updateProduct);
 
 module.exports = productRouter;
