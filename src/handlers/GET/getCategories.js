@@ -5,7 +5,7 @@ const {
 exports.getCategories = async (req, res) => {
   try {
     const response = await getCategoriesController();
-    res.status(200).json(response);
+    res.status(200).send(response);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
