@@ -10,6 +10,7 @@ const { createProduct } = require("../handlers/POST/createProduct");
 // PUT Handlers
 const { updateProduct } = require("../handlers/PUT/updateProduct");
 const { getAllUserProductsHandler } = require("../handlers/GET/getProductsUser");
+const { deleteProductseHandler } = require("../handlers/DELETE/deleteProductHandler");
 
 const productRouter = Router();
 
@@ -29,5 +30,7 @@ productRouter.post("/", createProduct);
 productRouter.get("/all", getAllUserProductsHandler);
 //Ruta para modificar los productos
 productRouter.put("/change", updateProduct);
+//Ruta para eliminar productos
+productRouter.delete("/:id", deleteProductseHandler);
 
 module.exports = productRouter;
