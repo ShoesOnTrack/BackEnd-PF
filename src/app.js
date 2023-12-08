@@ -6,7 +6,7 @@ const cors = require("cors");
 const server = express();
 
 server.use(morgan("dev"));
-server.use(express.json());
+server.use(express.json({limit: '50mb'}));
 server.use(cors());
 
 server.use(router);
