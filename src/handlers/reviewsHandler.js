@@ -1,4 +1,4 @@
-const { create, put, getAllReviews, del, findReview, } = require("../controllers/reviewsController")
+const { create, put, getAllReviews, del, findReview, } = require("../controllers/reviewsControllers.js")
 
 
 

@@ -48,7 +48,7 @@ exports.create = async (data) => {
 
     //obtener el usuario
 
-    const user = await usuarios.findOne({ where: { id: userId }, attributes: { exclude: ["password"] } })
+    const user = await users.findOne({ where: { id: userId }, attributes: { exclude: ["password"] } })
 
     if (!user) {
       //si no hay usuario cancelamos la creacion
@@ -190,15 +190,12 @@ async function getAllReviews(reviewId) {
     error: false,
   }
   try {
-    const reviews = await review.findAll({
+    const reviews = await Reviews.findAll({
       include: [{
-        model: usuarios,
+        model: Users,
         attributes: {
           exclude: ["password"]
         },
-        include: [{
-          model: personas,
-        }]
       }]
     })
 
