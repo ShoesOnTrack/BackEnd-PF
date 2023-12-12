@@ -91,7 +91,7 @@ const captureOrder = async (req, res) => {
       const emailResult = await sendEmail(
         userEmail,
         "Notificación de Pago",
-        "Has realizado con éxito la compra del siguiente ticket :"
+        "Te informamos que tu pago ha sido procesado con éxito. Gracias por tu compra.",
       );
 
       if (emailResult) {
