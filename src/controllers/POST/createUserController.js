@@ -15,7 +15,7 @@ exports.createUserController = async (name, email, email_verified) => {
       // Si no se creó un nuevo usuario, significa que ya existe, entonces puedes lanzar un error o manejarlo de otra manera.
       let id = newUser.id;
       let name = newUser.name;
-      let email = newUser.name;
+      let email = newUser.email;
       let isAdmin = newUser.isAdmin;
       let ban = newUser.ban;
 

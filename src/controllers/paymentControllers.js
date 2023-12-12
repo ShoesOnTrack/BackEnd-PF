@@ -1,13 +1,15 @@
 const axios = require("axios");
 const sendEmail = require("../config/mailer.js");
-// const { PAYPAL_API, PAYPAL_API_CLIENT, PAYPAL_API_SECRET }= process.env;
 
 const PAYPAL_API = "https://api-m.sandbox.paypal.com";
-const PAYPAL_API_CLIENT = "AaHhTpPS12nRr6xYKtC1ON5uepgecESSzzVPZ-GF91aq-hIqPC-_Qs6csNxmCxl4-pI5SmPMZeB-aHV6"
-const PAYPAL_API_SECRET = "EAbiJOvD1WyHZ3kGeDdP3gKReovmZ_urdMRuMtDS2jF3dw1UYPmrTXkQIIyfGNzjd9dTzdvCsS0Agh8f"
+const PAYPAL_API_CLIENT = "AaHhTpPS12nRr6xYKtC1ON5uepgecESSzzVPZ-GF91aq-hIqPC-_Qs6csNxmCxl4-pI5SmPMZeB-aHV6";
+const PAYPAL_API_SECRET = "EAbiJOvD1WyHZ3kGeDdP3gKReovmZ_urdMRuMtDS2jF3dw1UYPmrTXkQIIyfGNzjd9dTzdvCsS0Agh8f";
 
+let userEmail; // Variable para almacenar userEmail
 
 const createOrder = async (req, res) => {
+  userEmail = req.body.userEmail; // Asigna el valor de userEmail
+
   try {
     const order = {
       intent: "CAPTURE",
@@ -15,7 +17,7 @@ const createOrder = async (req, res) => {
         {
           amount: {
             currency_code: "USD",
-            value: "300.00",
+            value: req.body.totalPrice.toString(),
           },
           description: "shoes sales application",
         },
@@ -32,7 +34,7 @@ const createOrder = async (req, res) => {
         return_url: "http://localhost:3001/payment/capture-order",
         cancel_url: "http://localhost:3001/payment/cancel-order",
       },
-    };
+    }
 
     const params = new URLSearchParams();
     params.append("grant_type", "client_credentials");
@@ -40,7 +42,7 @@ const createOrder = async (req, res) => {
     const {
       data: { access_token },
     } = await axios.post(
-      "https://api-m.sandbox.paypal.com/v1/oauth2/token",
+      `${PAYPAL_API}/v1/oauth2/token`,
       params,
       {
         headers: {
@@ -52,7 +54,6 @@ const createOrder = async (req, res) => {
         },
       }
     );
-    console.log(access_token);
 
     const response = await axios.post(
       `${PAYPAL_API}/v2/checkout/orders`,
@@ -63,10 +64,11 @@ const createOrder = async (req, res) => {
         },
       }
     );
+
     res.json(response.data);
   } catch (error) {
-    console.log(error.message);
-    res.status(500).send("Something goes wrong");
+    console.error("Error en createOrder:", error.message);
+    res.status(500).send("Something went wrong");
   }
 };
 
@@ -84,21 +86,25 @@ const captureOrder = async (req, res) => {
         },
       }
     );
-    console.log(response.data);
-    // Verifico si fue exitosa la captura
-    if (response.data.status === "COMPLETED") {
-      //Enviaremos la notificacion del pago
+
+    if (response.data.status === "COMPLETED" && userEmail) {
       const emailResult = await sendEmail(
-        "sergiovelezhernandez11@gmail.com", // Cambia por la dirección de correo a la que deseas enviar la notificación
+        userEmail,
         "Notificación de Pago",
-        "Has realizado con éxito la compra del siguiente ticket :"
-      ); 
+        "Te informamos que tu pago ha sido procesado con éxito. Gracias por tu compra.",
+      );
+
+      if (emailResult) {
+        console.log("Correo electrónico enviado con éxito:", emailResult);
+      } else {
+        console.error("Error al enviar el correo electrónico");
+      }
     }
 
     return res.redirect("http://localhost:3000/");
   } catch (error) {
-    console.error(error);
-    return res.status(500).send("Something goes wrong");
+    console.error("Error en captureOrder:", error);
+    return res.status(500).send("Something went wrong");
   }
 };
 
