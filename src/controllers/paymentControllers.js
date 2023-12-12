@@ -101,7 +101,7 @@ const captureOrder = async (req, res) => {
       }
     }
 
-    return res.redirect("http://localhost:3000/");
+    return res.redirect("http://localhost:3000/purchase");
   } catch (error) {
     console.error("Error en captureOrder:", error);
     return res.status(500).send("Something went wrong");
