@@ -31,9 +31,8 @@ exports.getAllReviews = async () => {
 }
 
 //crear reseña
-exports.create = async (data) => {
+exports.create = async (contenido, puntuacion, userId) => {
   //resultado
-  console.log(data);
   const result = {
     data: null,
     message: "",
@@ -43,12 +42,11 @@ exports.create = async (data) => {
   //ejecucion
   try {
     //obtener y validar datos para la review
-    const { contenido, puntuacion, userId } = data.body
 
 
     //obtener el usuario
 
-    const user = await users.findOne({ where: { id: userId }, attributes: { exclude: ["password"] } })
+    const user = await Users.findOne({ where: { id: userId }, attributes: { exclude: ["password"] } })
 
     if (!user) {
       //si no hay usuario cancelamos la creacion
@@ -58,7 +56,7 @@ exports.create = async (data) => {
     } else {
 
       //revisar si el usuario ya tiene una review: o crear
-      const alrPublished = await review.findOne({ where: { id_usuario: userId } })
+      const alrPublished = await Reviews.findOne({ where: { UserId: userId } })
 
       if (alrPublished) {
         //si existe se evita la creacion.
@@ -66,8 +64,7 @@ exports.create = async (data) => {
         result.status = 409
       } else {
         //crear la review
-
-        const createResult = await createReview({ contenido, puntuacion }, user)
+        const createResult = await Reviews.create({ contenido, puntuacion, UserId: userId});
         result.message = createResult.message
         result.error = createResult.error
         result.status = createResult.status
@@ -103,7 +100,7 @@ exports.put = async (data) => {
 
     //esto va a cambiar cuando este la auth
 
-    const currentReview = await review.findOne({ where: { id_usuario: userId, id: reviewId } })
+    const currentReview = await Reviews.findOne({ where: { id_usuario: userId, id: reviewId } })
 
     if (!currentReview) {
       //si no existe la review se omite la actualizacion y se retorna el mensaje 
@@ -138,16 +135,16 @@ exports.del = async (data) => {
     error: false,
   }
   try {
-    const { userId, reviewId } = data.body
+    const { userId } = data.body
+    console.log("aaa", userId)
 
-    const currentReview = await review.findOne({ where: { id_usuario: userId, id: reviewId } })
+    const destroyResult = await Reviews.destroy({ where: { UserId: userId} })
 
-    if (!currentReview) {
+    if (!destroyResult) {
       result.error = true
       result.message = "No se encontro la reseña solicitada."
       result.status = 404
     } else {
-      const destroyResult = await deleteReviews(currentReview)
 
       result.message = destroyResult.message
       result.status = destroyResult.status
@@ -168,7 +165,7 @@ exports.findReview = async (data) => {
   console.log(data.id);
   let result = {};
   try {
-    await review.findOne({
+    await Reviews.findOne({
       where: { id_usuario: data.id }
     }).then((dta) => {
       result.data = dta;

@@ -19,8 +19,9 @@ exports.getAll = async (req, res) => {
 
 
 exports.createReview = async (req, res) => {
+  const {contenido, puntuacion, userId} = req.body
   try {
-    const result = await create(req)
+    const result = await create(contenido, puntuacion, userId)
     return res.status(result.status || 200).json(result)
   } catch (error) {
     return res.status(500).json({ error: true, message: "Error al consultar la base de datos." })
