@@ -49,6 +49,8 @@ Reviews.belongsTo(Users);
 Users.hasMany(Payments);
 Payments.belongsTo(Users);
 
+
+
 module.exports = {
   ...sequelize.models,
   conn: sequelize,

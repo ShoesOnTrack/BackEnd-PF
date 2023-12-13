@@ -11,15 +11,17 @@ module.exports = (sequelize) => {
         autoIncrement: true,
         unique: true,
       },
-      review: {
+      contenido: {
         type: DataTypes.STRING,
         allowNull: false,
       },
-      calification: {
+      puntuacion: {
         type: DataTypes.DOUBLE,
         allowNull: false,
       },
-    },
-    { paranoid: true }
-  );
+    }, {
+    sequelize,
+    modelName: 'Reviews',
+  });
+  { paranoid: true }
 };
